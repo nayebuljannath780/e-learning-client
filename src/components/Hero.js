@@ -7,12 +7,12 @@ const Hero = () => {
             <div className='container mx-auto'>
                 <div className="hero">
                     <div className="hero-content flex-col lg:flex-row-reverse">
-                        <div className='lg:w-3/6'>
-                            <img src="assets/online-tut.jpg" className="rounded-lg" alt='' />
+                        <div className='lg:w-3/6  ml-6'>
+                            <img src="assets/hero-banner.svg" className="rounded-lg px-12 " alt='' />
                         </div>
                         <div className='lg:w-3/6'>
-                            <h1 className="text-5xl font-bold mt-5">Get your best career by practicing with learning deck.</h1>
-                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <h1 className="text-5xl font-bold mt-5">Innovate Your Learning Experience</h1>
+                            <p className="py-8 text-justify text-gray-400">Welcome to our cutting-edge e-learning platform, where knowledge knows no boundaries. Experience the power of learning in a digital realm, where education becomes accessible anytime, anywhere. Our platform brings together a vast array of courses, expert instructors, and interactive resources to ignite your thirst for knowledge.</p>
                             <button className="btn btn-primary"><Link to='courses'>Get Started</Link></button>
                         </div>
                     </div>

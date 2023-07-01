@@ -20,7 +20,7 @@ const Nav = () => {
         setDark(!dark);
     }
     return (
-        <nav className='shadow-md sticky top-0 bg-white z-50'>
+        <nav className='container px-28  shadow-md sticky top-0 bg-white z-50'>
             <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -30,8 +30,7 @@ const Nav = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='courses'>Courses</Link></li>
-                            <li><Link to='blogs'>Blog</Link></li>
-                            <li><Link to='faq'>faq</Link></li>
+                            <li><Link to='faq'>Query</Link></li>
                         </ul>
                     </div>
                     <Link to='/'><img className='h-10' src="assets/logo.png" alt="" /></Link>
@@ -40,8 +39,7 @@ const Nav = () => {
                     <ul className="menu menu-horizontal p-0">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='courses'>Courses</Link></li>
-                        <li><Link to='blogs'>Blog</Link></li>
-                        <li><Link to='faq'>faq</Link></li>
+                        <li><Link to='faq'>Query</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

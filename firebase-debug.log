@@ -1,0 +1,38 @@
+[debug] [2023-07-01T14:35:04.370Z] ----------------------------------------------------------------------
+[debug] [2023-07-01T14:35:04.376Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-01T14:35:04.377Z] CLI Version:   12.3.1
+[debug] [2023-07-01T14:35:04.377Z] Platform:      win32
+[debug] [2023-07-01T14:35:04.378Z] Node Version:  v18.16.0
+[debug] [2023-07-01T14:35:04.380Z] Time:          Sat Jul 01 2023 20:35:04 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-07-01T14:35:04.380Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-01T14:35:04.392Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-07-01T14:35:04.795Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-01T14:35:04.796Z] > authorizing via signed-in user (nayebul780@gmail.com)
+[debug] [2023-07-01T14:35:04.797Z] [iam] checking project learning-deck for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-01T14:35:04.801Z] > refreshing access token with scopes: []
+[debug] [2023-07-01T14:35:04.804Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-01T14:35:04.804Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-01T14:35:05.188Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-01T14:35:05.190Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-01T14:35:05.204Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-deck:testIamPermissions [none]
+[debug] [2023-07-01T14:35:05.205Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-deck:testIamPermissions x-goog-quota-user=projects/learning-deck
+[debug] [2023-07-01T14:35:05.206Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-deck:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-01T14:35:05.522Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-07-01T14:35:05.522Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-07-01T14:35:07.042Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-deck:testIamPermissions 200
+[debug] [2023-07-01T14:35:07.042Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-deck:testIamPermissions {}
+[debug] [2023-07-01T14:35:07.042Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project learning-deck:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-07-01T14:35:07.045Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/learning-deck [none]
+[debug] [2023-07-01T14:35:07.964Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/learning-deck 403
+[debug] [2023-07-01T14:35:07.964Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/learning-deck {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-07-01T14:35:07.966Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-07-01T14:35:08.422Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project learning-deck. Please make sure the project exists and your account has permission to access it.
