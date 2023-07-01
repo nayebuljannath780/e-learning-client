@@ -52,14 +52,14 @@ const FaqElement = ({ faq }) => {
 
 const Faq = () => {
     return (
-        <div className='container mx-auto relative py-[80px] px-3'>
-            <SectionTitle name='faq question'/>
+        <div className=' mx-24 relative py-[80px] px-3'>
+            <SectionTitle name='Query'/>
             <div className='flex flex-col-reverse md:flex-row items-center'>
                 <div className='md:w-6/12 my-5'>
                     {faqData.map(faq => <FaqElement faq={faq} />)}
                 </div>
                 <div className='flex justify-center md:w-6/12'>
-                    <img className='md:max-w-sm' src="assets/faq.jpg" alt="" />
+                    <img className='md:max-w-sm' src="assets/question.svg" alt="" />
                 </div>
             </div>
         </div>
