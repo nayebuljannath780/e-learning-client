@@ -2,13 +2,13 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { authContext } from '../context/UserContext';
-import { MoonIcon, SunIcon, UserCircleIcon } from '@heroicons/react/24/solid';
-import { useState } from 'react';
+import { UserCircleIcon } from '@heroicons/react/24/solid';
+// import { useState } from 'react';
 
 
 const Nav = () => {
     const { user, logOut } = useContext(authContext);
-    const [dark, setDark] = useState(false);
+    // const [dark, setDark] = useState(false);
     console.log(user);
     const handleLogOut = (e) => {
         e.preventDefault()
@@ -16,9 +16,9 @@ const Nav = () => {
         .then(res => console.log(res))
         .catch(err => console.log(err))
     }
-    const handleTheme = () => {
-        setDark(!dark);
-    }
+    // const handleTheme = () => {
+    //     setDark(!dark);
+    // }
     return (
         <nav className='container px-28  shadow-md sticky top-0 bg-white z-50'>
             <div className="navbar container mx-auto">
@@ -43,12 +43,12 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <div onClick={handleTheme} className={`w-10 h-10 p-1 rounded-full cursor-pointer mr-5 hidden md:block ${!dark ? 'bg-black text-white' : 'bg-gray-50'}`}>
+                    {/* <div onClick={handleTheme} className={`w-10 h-10 p-1 rounded-full cursor-pointer mr-5 hidden md:block ${!dark ? 'bg-black text-white' : 'bg-gray-50'}`}>
                         {!dark ? 
                         <MoonIcon /> :
                         <SunIcon />
                         }
-                    </div>
+                    </div> */}
                     {!user ?
                         <div>
                             <Link className='mx-4' to='login'>Login</Link>

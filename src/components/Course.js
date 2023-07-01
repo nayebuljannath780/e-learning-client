@@ -1,10 +1,9 @@
 import React from 'react';
-import { ClockIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 
 const Course = ({ course }) => {
     console.log(course);
-    const { id, title, image, price, duration } = course;
+    const { id, title, image, price } = course;
     return (
         <div>
             <div className="card w-full bg-base-100 shadow-xl">
@@ -12,10 +11,10 @@ const Course = ({ course }) => {
                 <div className="card-body">
                     <h2 className="card-title font-bold">{title}</h2>
                     <div className='flex justify-between'>
-                        <span className='font-bold text-gray-600'>price : {price}TK</span>
-                        <span className='flex whitespace-nowrap border border-primary p-1 rounded-xl text-primary'> <ClockIcon className='w-4 mr-2' /> {duration} D</span>
+                        <span className='font-bold text-gray-600 mt-4'>Price : {price}TK</span>
+                        <Link to={`course-detail/${id}`}><button className="btn btn-primary">Buy Now</button></Link>
                     </div>
-                    <Link to={`course-detail/${id}`}><button className="btn btn-primary">Buy Now</button></Link>
+                    
                 </div>
             </div>
         </div>

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         
-            <footer className="p-10 bg-base-200 text-base-content">
+            <footer className=" px-24 py-10 bg-base-200 text-base-content">
                 <div className='container mx-auto footer'>
                 <div>
                     <Link to='/'><img className='h-10' src="assets/logo.png" alt="" /></Link>
-                    <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+                    <p>Nayebul Jannath Chowdhury<br/>nayebul780@gmail.com</p>
                 </div>
                 <div>
                     <span className="footer-title">Services</span>

@@ -27,22 +27,22 @@ const Register = () => {
             <div className="container mx-auto">
                 <div className="md:w-[450px] mx-auto">
                     <div>
-                        <h1 className="text-4xl font-bold mb-2">Register now!</h1>
+                        <h1 className="text-4xl font-bold mb-2 text-center">Register now!</h1>
                     </div>
                     <div className="card flex-shrink-0 shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit} className="card-body">
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">full name</span>
+                                    <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" name='name' placeholder="full name" className="input input-bordered" />
+                                <input type="text" name='name' placeholder="name" className="input input-bordered" />
                             </div>
-                            <div className="form-control">
+                            {/* <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Photo url</span>
                                 </label>
                                 <input type="text" name='name' placeholder="photo url" className="input input-bordered" />
-                            </div>
+                            </div> */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>

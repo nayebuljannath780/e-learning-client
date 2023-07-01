@@ -28,7 +28,7 @@ const Login = () => {
             <div className="container mx-auto">
                 <div className="md:w-[450px] mx-auto">
                     <div>
-                        <h1 className="text-4xl font-bold mb-2">Login now!</h1>
+                        <h1 className="text-4xl text-center font-bold mb-2">Login now!</h1>
                     </div>
                     <div className="card flex-shrink-0 shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit} className="card-body">
